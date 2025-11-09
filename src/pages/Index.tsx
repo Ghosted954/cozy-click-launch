@@ -44,13 +44,24 @@ const Index = () => {
           </video>
         </div>
 
-        <Button
-          size="lg"
-          className="text-lg px-8 py-6 bg-primary hover:bg-primary/90"
-          onClick={() => setShowBooking(true)}
-        >
-          Activate GhostNet AI
-        </Button>
+        <div className="flex flex-col gap-4 items-center">
+          <Button
+            size="lg"
+            className="text-lg px-8 py-6 bg-primary hover:bg-primary/90"
+            onClick={() => setShowBooking(true)}
+          >
+            Activate GhostNet AI
+          </Button>
+          
+          <Button
+            size="lg"
+            variant="outline"
+            className="text-lg px-8 py-6 border-primary text-primary hover:bg-primary hover:text-primary-foreground"
+            asChild
+          >
+            <a href="tel:7865554444">Test Voice AI Now - Call 786-555-4444</a>
+          </Button>
+        </div>
       </section>
 
       {/* Value Proposition */}
