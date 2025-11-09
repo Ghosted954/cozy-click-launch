@@ -29,6 +29,21 @@ const Index = () => {
           GhostNet AI answers your calls, follows up with leads, and books appointments 24/7 so you can focus on
           closings, not callbacks.
         </p>
+        
+        <div className="max-w-4xl mx-auto mb-12">
+          <video 
+            className="w-full rounded-lg shadow-lg" 
+            controls 
+            autoPlay 
+            muted 
+            loop
+            playsInline
+          >
+            <source src="https://storage.googleapis.com/msgsndr/K5b9gVmLrEQZQwjc30Hl/media/690b8000095b9c1561d18261.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+
         <Button
           size="lg"
           className="text-lg px-8 py-6 bg-primary hover:bg-primary/90"
