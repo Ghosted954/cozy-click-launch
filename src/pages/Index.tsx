@@ -264,7 +264,7 @@ no more missed inquiries.</p>
             </div>
             <h4 className="text-2xl font-bold mb-4">Connect</h4>
             <p className="text-muted-foreground">
-              We start by learning how you work—your lead sources, your process, and your goals. Then we customize your
+              We start by learning how you work your lead sources, your process, and your goals. Then we customize your
               AI assistant to sound just like you and plug it directly into your business.
             </p>
           </Card>
