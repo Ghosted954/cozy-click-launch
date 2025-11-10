@@ -285,9 +285,7 @@ no more missed inquiries.</p>
         </div>
 
         <div className="text-center mt-12">
-          <Button size="lg" onClick={() => setShowBooking(true)} className="bg-primary hover:bg-primary/90">
-            Book Your Free Strategy Call
-          </Button>
+          <Button size="lg" onClick={() => setShowBooking(true)} className="bg-primary hover:bg-primary/90">​Activate GhostNet AI</Button>
         </div>
       </section>
 
