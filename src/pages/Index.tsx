@@ -339,11 +339,11 @@ const Index = () => {
         <h3 className="text-4xl md:text-5xl font-bold mb-8">
           Experience the Power of GhostNet AI for Yourself
         </h3>
+        <div id="chat-widget-container" className="mb-8"></div>
         <p className="text-xl mb-12 text-muted-foreground max-w-3xl mx-auto">
           Don't just take our word for it—see how GhostNet AI books leads, answers questions, and follows up like
           clockwork.
         </p>
-        <div id="chat-widget-container"></div>
       </section>
 
       {/* Footer */}
