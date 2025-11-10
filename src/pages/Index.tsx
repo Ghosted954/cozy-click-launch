@@ -4,10 +4,8 @@ import { Card } from "@/components/ui/card";
 import { BookingDialog } from "@/components/BookingDialog";
 import { Calendar, MessageSquare, Repeat, Home, CheckCircle2 } from "lucide-react";
 import ghostframeLogo from "@/assets/ghostframe-logo.png";
-
 const Index = () => {
   const [showBooking, setShowBooking] = useState(false);
-
   useEffect(() => {
     const container = document.getElementById('chat-widget-container');
     if (container) {
@@ -16,7 +14,6 @@ const Index = () => {
       script.setAttribute('data-resources-url', 'https://widgets.leadconnectorhq.com/chat-widget/loader.js');
       script.setAttribute('data-widget-id', '6903cdb8d6df2a2f15d97915');
       container.appendChild(script);
-      
       return () => {
         if (container.contains(script)) {
           container.removeChild(script);
@@ -24,18 +21,12 @@ const Index = () => {
       };
     }
   }, []);
-
-  return (
-    <div className="min-h-screen bg-background text-foreground">
+  return <div className="min-h-screen bg-background text-foreground">
       {/* Header */}
       <header className="border-b border-border">
         <div className="container mx-auto px-4 py-6">
           <div className="flex justify-center">
-            <img 
-              src={ghostframeLogo} 
-              alt="GhostFrame Marketing" 
-              className="h-20"
-            />
+            <img src={ghostframeLogo} alt="GhostFrame Marketing" className="h-20" />
           </div>
         </div>
       </header>
@@ -52,24 +43,13 @@ const Index = () => {
         </p>
         
         <div className="max-w-4xl mx-auto mb-12">
-          <video 
-            className="w-full rounded-lg shadow-lg" 
-            controls 
-            autoPlay 
-            muted 
-            loop
-            playsInline
-          >
+          <video className="w-full rounded-lg shadow-lg" controls autoPlay muted loop playsInline>
             <source src="https://storage.googleapis.com/msgsndr/K5b9gVmLrEQZQwjc30Hl/media/690b8000095b9c1561d18261.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
         </div>
 
-        <Button
-          size="lg"
-          className="text-lg px-8 py-6 bg-primary hover:bg-primary/90"
-          onClick={() => setShowBooking(true)}
-        >
+        <Button size="lg" className="text-lg px-8 py-6 bg-primary hover:bg-primary/90" onClick={() => setShowBooking(true)}>
           Activate GhostNet AI
         </Button>
       </section>
@@ -95,7 +75,8 @@ const Index = () => {
                 <MessageSquare className="w-8 h-8 text-primary flex-shrink-0" />
                 <div>
                   <h4 className="font-semibold text-lg mb-2">24/7 Lead Response</h4>
-                  <p className="text-muted-foreground">Answers new leads instantly—no more missed inquiries.</p>
+                  <p className="text-muted-foreground">Answers new leads instantly 
+no more missed inquiries.</p>
                 </div>
               </div>
             </Card>
@@ -137,22 +118,10 @@ const Index = () => {
       <section className="container mx-auto px-4 py-16">
         <h3 className="text-4xl md:text-5xl font-bold mb-12 text-center">Who This Is For</h3>
         <div className="max-w-3xl mx-auto grid md:grid-cols-2 gap-6">
-          {[
-            "Agents tired of missing calls from potential buyers or sellers",
-            "Realtors juggling too many follow-ups manually",
-            "Small brokerages looking to compete with bigger teams",
-            "Agents who want more appointments without cold calling",
-            "Teams that need an AI assistant to book and confirm showings automatically",
-            "Professionals ready to look more organized and responsive",
-            "Realtors who lose leads after hours",
-            "Solo agents without a full-time assistant",
-            "Real estate businesses that want to scale without hiring more staff",
-          ].map((item, index) => (
-            <div key={index} className="flex items-start gap-3">
+          {["Agents tired of missing calls from potential buyers or sellers", "Realtors juggling too many follow-ups manually", "Small brokerages looking to compete with bigger teams", "Agents who want more appointments without cold calling", "Teams that need an AI assistant to book and confirm showings automatically", "Professionals ready to look more organized and responsive", "Realtors who lose leads after hours", "Solo agents without a full-time assistant", "Real estate businesses that want to scale without hiring more staff"].map((item, index) => <div key={index} className="flex items-start gap-3">
               <CheckCircle2 className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
               <p className="text-lg">{item}</p>
-            </div>
-          ))}
+            </div>)}
         </div>
       </section>
 
@@ -363,8 +332,6 @@ const Index = () => {
 
       {/* Booking Dialog */}
       <BookingDialog open={showBooking} onOpenChange={setShowBooking} />
-    </div>
-  );
+    </div>;
 };
-
 export default Index;
