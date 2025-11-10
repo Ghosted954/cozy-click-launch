@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { BookingDialog } from "@/components/BookingDialog";
@@ -6,6 +6,23 @@ import { Calendar, MessageSquare, Repeat, Home, CheckCircle2 } from "lucide-reac
 
 const Index = () => {
   const [showBooking, setShowBooking] = useState(false);
+
+  useEffect(() => {
+    const container = document.getElementById('chat-widget-container');
+    if (container) {
+      const script = document.createElement('script');
+      script.src = 'https://widgets.leadconnectorhq.com/loader.js';
+      script.setAttribute('data-resources-url', 'https://widgets.leadconnectorhq.com/chat-widget/loader.js');
+      script.setAttribute('data-widget-id', '6903cdb8d6df2a2f15d97915');
+      container.appendChild(script);
+      
+      return () => {
+        if (container.contains(script)) {
+          container.removeChild(script);
+        }
+      };
+    }
+  }, []);
 
   return (
     <div className="min-h-screen bg-background text-foreground">
@@ -326,13 +343,7 @@ const Index = () => {
         <h3 className="text-4xl md:text-5xl font-bold mb-8">
           Experience the Power of GhostNet AI for Yourself
         </h3>
-        <div className="mb-8">
-          <script 
-            src="https://widgets.leadconnectorhq.com/loader.js" 
-            data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js" 
-            data-widget-id="6903cdb8d6df2a2f15d97915"
-          />
-        </div>
+        <div id="chat-widget-container" className="mb-8"></div>
         <p className="text-xl mb-12 text-muted-foreground max-w-3xl mx-auto">
           Don't just take our word for it—see how GhostNet AI books leads, answers questions, and follows up like
           clockwork.
