@@ -231,11 +231,7 @@ no more missed inquiries.</p>
         <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
           <Card className="p-8 border-border bg-card">
             <h4 className="text-2xl font-bold mb-4">Built From the Inside, Not the Outside</h4>
-            <p className="text-muted-foreground">
-              Most automation companies build from the surface—quick setups that look good but fall apart when it
-              matters. GhostFrame builds from the inside out, focusing on the systems, logic, and flow that keep your
-              business running automatically, 24/7.
-            </p>
+            <p className="text-muted-foreground">Most automation companies build from the surface quick setups that look good but fall apart when it matters. GhostFrame builds from the inside out, focusing on the systems, logic, and flow that keep your business running automatically, 24/7.</p>
           </Card>
 
           <Card className="p-8 border-border bg-card">
@@ -248,20 +244,12 @@ no more missed inquiries.</p>
 
           <Card className="p-8 border-border bg-card">
             <h4 className="text-2xl font-bold mb-4">Real-Time Monitoring & Support</h4>
-            <p className="text-muted-foreground">
-              We personally monitor client systems around the clock, receiving instant alerts for leads, calls, and
-              performance activity. Your system doesn't just run—it learns, improves, and performs better every single
-              week.
-            </p>
+            <p className="text-muted-foreground">We personally monitor client systems around the clock, receiving instant alerts for leads, calls, and performance activity. Your system doesn't just run it learns, improves, and performs better every single week.</p>
           </Card>
 
           <Card className="p-8 border-border bg-card">
             <h4 className="text-2xl font-bold mb-4">Tailored AI That Sounds Like You</h4>
-            <p className="text-muted-foreground">
-              Most AI setups sound robotic and generic. GhostFrame's agents are trained to match your tone, your brand,
-              and your customer style. It's not just automation—it's authentic communication that helps you close more
-              business.
-            </p>
+            <p className="text-muted-foreground">Most AI setups sound robotic and generic. GhostFrame's agents are trained to match your tone, your brand, and your customer style. It's not just automation it's authentic communication that helps you close more business.</p>
           </Card>
         </div>
       </section>
@@ -286,10 +274,7 @@ no more missed inquiries.</p>
               <span className="text-3xl font-bold text-primary">2</span>
             </div>
             <h4 className="text-2xl font-bold mb-4">Automate</h4>
-            <p className="text-muted-foreground">
-              Once everything's connected, your AI begins doing the heavy lifting—booking appointments, following up
-              with leads, and answering common questions automatically.
-            </p>
+            <p className="text-muted-foreground">Once everything's connected, your AI begins doing the heavy lifting booking appointments, following up with leads, and answering common questions automatically.</p>
           </Card>
 
           <Card className="p-8 border-border bg-card text-center">
@@ -297,10 +282,7 @@ no more missed inquiries.</p>
               <span className="text-3xl font-bold text-primary">3</span>
             </div>
             <h4 className="text-2xl font-bold mb-4">Scale</h4>
-            <p className="text-muted-foreground">
-              Now that your systems are running in the background, you can focus on what matters—closing deals. Your AI
-              continues to nurture leads, request reviews, and re-engage cold contacts.
-            </p>
+            <p className="text-muted-foreground">Now that your systems are running in the background, you can focus on what matters closing deals. Your AI continues to nurture leads, request reviews, and re-engage cold contacts.</p>
           </Card>
         </div>
 
@@ -316,10 +298,7 @@ no more missed inquiries.</p>
         <h3 className="text-4xl md:text-5xl font-bold mb-8">
           Experience the Power of GhostNet AI for Yourself
         </h3>
-        <p className="text-xl mb-8 text-muted-foreground max-w-3xl mx-auto">
-          Don't just take our word for it—see how GhostNet AI books leads, answers questions, and follows up like
-          clockwork.
-        </p>
+        <p className="text-xl mb-8 text-muted-foreground max-w-3xl mx-auto">Don't just take our word for it see how GhostNet AI books leads, answers questions, and follows up like clockwork.</p>
         <div id="chat-widget-container" className="mb-8 flex justify-center"></div>
       </section>
 
