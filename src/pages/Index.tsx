@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { BookingDialog } from "@/components/BookingDialog";
@@ -6,6 +6,19 @@ import { Calendar, MessageSquare, Repeat, Home, CheckCircle2 } from "lucide-reac
 
 const Index = () => {
   const [showBooking, setShowBooking] = useState(false);
+
+  useEffect(() => {
+    const script = document.createElement('script');
+    script.src = 'https://widgets.leadconnectorhq.com/loader.js';
+    script.setAttribute('data-resources-url', 'https://widgets.leadconnectorhq.com/chat-widget/loader.js');
+    script.setAttribute('data-widget-id', '6903cdb8d6df2a2f15d97915');
+    script.async = true;
+    document.body.appendChild(script);
+
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
 
   return (
     <div className="min-h-screen bg-background text-foreground">
@@ -330,14 +343,7 @@ const Index = () => {
           Don't just take our word for it—see how GhostNet AI books leads, answers questions, and follows up like
           clockwork.
         </p>
-        <Button
-          size="lg"
-          variant="outline"
-          className="text-lg px-8 py-6 border-primary text-primary hover:bg-primary hover:text-primary-foreground"
-          asChild
-        >
-          <a href="tel:7865554444">Experience GhostNet AI - Call 786-555-4444</a>
-        </Button>
+        <div id="chat-widget-container"></div>
       </section>
 
       {/* Footer */}
