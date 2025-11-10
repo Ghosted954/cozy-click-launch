@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { BookingDialog } from "@/components/BookingDialog";
 import { Calendar, MessageSquare, Repeat, Home, CheckCircle2 } from "lucide-react";
+import ghostframeLogo from "@/assets/ghostframe-logo.png";
 
 const Index = () => {
   const [showBooking, setShowBooking] = useState(false);
@@ -29,9 +30,12 @@ const Index = () => {
       {/* Header */}
       <header className="border-b border-border">
         <div className="container mx-auto px-4 py-6">
-          <div className="text-center">
-            <h1 className="text-2xl font-bold tracking-wider">GHOSTFRAME</h1>
-            <p className="text-xs tracking-widest text-muted-foreground">MARKETING</p>
+          <div className="flex justify-center">
+            <img 
+              src={ghostframeLogo} 
+              alt="GhostFrame Marketing" 
+              className="h-20"
+            />
           </div>
         </div>
       </header>
