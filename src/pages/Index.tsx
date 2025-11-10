@@ -44,24 +44,13 @@ const Index = () => {
           </video>
         </div>
 
-        <div className="flex flex-col gap-4 items-center">
-          <Button
-            size="lg"
-            className="text-lg px-8 py-6 bg-primary hover:bg-primary/90"
-            onClick={() => setShowBooking(true)}
-          >
-            Activate GhostNet AI
-          </Button>
-          
-          <Button
-            size="lg"
-            variant="outline"
-            className="text-lg px-8 py-6 border-primary text-primary hover:bg-primary hover:text-primary-foreground"
-            asChild
-          >
-            <a href="tel:7865554444">Test Voice AI Now - Call 786-555-4444</a>
-          </Button>
-        </div>
+        <Button
+          size="lg"
+          className="text-lg px-8 py-6 bg-primary hover:bg-primary/90"
+          onClick={() => setShowBooking(true)}
+        >
+          Activate GhostNet AI
+        </Button>
       </section>
 
       {/* Value Proposition */}
@@ -341,8 +330,13 @@ const Index = () => {
           Don't just take our word for it—see how GhostNet AI books leads, answers questions, and follows up like
           clockwork.
         </p>
-        <Button size="lg" onClick={() => setShowBooking(true)} className="bg-primary hover:bg-primary/90 text-lg px-8 py-6">
-          Book Your Free Strategy Call
+        <Button
+          size="lg"
+          variant="outline"
+          className="text-lg px-8 py-6 border-primary text-primary hover:bg-primary hover:text-primary-foreground"
+          asChild
+        >
+          <a href="tel:7865554444">Experience GhostNet AI - Call 786-555-4444</a>
         </Button>
       </section>
 
