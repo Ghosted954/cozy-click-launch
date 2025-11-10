@@ -61,7 +61,7 @@ const Index = () => {
             What If You Could Double Your Closings Without Doubling Your Workload?
           </h3>
           <p className="text-lg md:text-xl text-center mb-12 text-muted-foreground">
-            Real estate isn't about working harder—it's about never missing opportunities. GhostNet AI turns missed
+            Real estate isn't about working harder it's about never missing opportunities. GhostNet AI turns missed
             calls, DMs, and follow-ups into booked showings automatically. While you're closing one deal, your AI
             assistant is quietly lining up the next.
           </p>
