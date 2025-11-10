@@ -15,8 +15,21 @@ const Index = () => {
     script.async = true;
     document.body.appendChild(script);
 
+    // Move the chat widget to the correct container after it loads
+    const moveWidget = setInterval(() => {
+      const widget = document.querySelector('df-messenger') || document.querySelector('[data-widget-id]')?.parentElement;
+      const container = document.getElementById('chat-widget-container');
+      if (widget && container && !container.contains(widget)) {
+        container.appendChild(widget);
+        clearInterval(moveWidget);
+      }
+    }, 500);
+
     return () => {
-      document.body.removeChild(script);
+      clearInterval(moveWidget);
+      if (script.parentNode) {
+        document.body.removeChild(script);
+      }
     };
   }, []);
 
