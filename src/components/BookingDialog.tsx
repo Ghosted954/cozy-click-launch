@@ -20,17 +20,17 @@ export const BookingDialog = ({ open, onOpenChange }: BookingDialogProps) => {
 
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
-      <DialogContent className="sm:max-w-[600px]">
+      <DialogContent className="sm:max-w-[90vw] md:max-w-[800px] max-h-[90vh] overflow-hidden">,
         <DialogHeader>
           <DialogTitle className="text-2xl font-bold text-center">Schedule Your Consultation</DialogTitle>
         </DialogHeader>
-        <div className="flex flex-col gap-4 py-4">
+        <div className="flex flex-col gap-4 overflow-auto max-h-[70vh]">
           <p className="text-muted-foreground text-center">
             Select a date and time to book your free strategy call
           </p>
           <iframe 
             src="https://api.myfreshprintz.com/widget/booking/u6nmCc7Cqm1VZ4R5CuTz" 
-            style={{ width: '100%', border: 'none', overflow: 'hidden', minHeight: '500px' }} 
+            style={{ width: '100%', border: 'none', overflow: 'hidden', minHeight: '600px' }} 
             scrolling="no" 
             id="u6nmCc7Cqm1VZ4R5CuTz_1763135334855"
             title="Booking Calendar"
