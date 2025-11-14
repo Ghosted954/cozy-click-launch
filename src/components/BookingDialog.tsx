@@ -1,6 +1,5 @@
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
-import { Calendar } from "@/components/ui/calendar";
-import { useState } from "react";
+import { useEffect } from "react";
 
 interface BookingDialogProps {
   open: boolean;
@@ -8,27 +7,34 @@ interface BookingDialogProps {
 }
 
 export const BookingDialog = ({ open, onOpenChange }: BookingDialogProps) => {
-  const [date, setDate] = useState<Date | undefined>(new Date());
+  useEffect(() => {
+    const script = document.createElement('script');
+    script.src = 'https://api.myfreshprintz.com/js/form_embed.js';
+    script.type = 'text/javascript';
+    document.body.appendChild(script);
+
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
 
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
-      <DialogContent className="sm:max-w-[425px]">
+      <DialogContent className="sm:max-w-[600px]">
         <DialogHeader>
           <DialogTitle className="text-2xl font-bold text-center">Schedule Your Consultation</DialogTitle>
         </DialogHeader>
-        <div className="flex flex-col items-center gap-4 py-4">
+        <div className="flex flex-col gap-4 py-4">
           <p className="text-muted-foreground text-center">
             Select a date and time to book your free strategy call
           </p>
-          <Calendar
-            mode="single"
-            selected={date}
-            onSelect={setDate}
-            className="rounded-md border"
+          <iframe 
+            src="https://api.myfreshprintz.com/widget/booking/u6nmCc7Cqm1VZ4R5CuTz" 
+            style={{ width: '100%', border: 'none', overflow: 'hidden', minHeight: '500px' }} 
+            scrolling="no" 
+            id="u6nmCc7Cqm1VZ4R5CuTz_1763135334855"
+            title="Booking Calendar"
           />
-          <p className="text-sm text-muted-foreground text-center mt-4">
-            Calendar integration coming soon. For now, this is a placeholder.
-          </p>
         </div>
       </DialogContent>
     </Dialog>
