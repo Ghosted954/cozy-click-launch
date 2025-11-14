@@ -7,6 +7,7 @@ import ghostframeLogo from "@/assets/ghostframe-logo.png";
 const Index = () => {
   const [showBooking, setShowBooking] = useState(false);
   useEffect(() => {
+    // Load chat widget script
     const container = document.getElementById('chat-widget-container');
     if (container) {
       const script = document.createElement('script');
@@ -14,12 +15,23 @@ const Index = () => {
       script.setAttribute('data-resources-url', 'https://widgets.leadconnectorhq.com/chat-widget/loader.js');
       script.setAttribute('data-widget-id', '6903cdb8d6df2a2f15d97915');
       container.appendChild(script);
-      return () => {
-        if (container.contains(script)) {
-          container.removeChild(script);
-        }
-      };
     }
+
+    // Load booking calendar embed script
+    const bookingScript = document.createElement('script');
+    bookingScript.src = 'https://api.myfreshprintz.com/js/form_embed.js';
+    bookingScript.type = 'text/javascript';
+    document.body.appendChild(bookingScript);
+
+    return () => {
+      if (container && container.contains(document.querySelector('script[src="https://widgets.leadconnectorhq.com/loader.js"]'))) {
+        const chatScript = container.querySelector('script');
+        if (chatScript) container.removeChild(chatScript);
+      }
+      if (document.body.contains(bookingScript)) {
+        document.body.removeChild(bookingScript);
+      }
+    };
   }, []);
   return <div className="min-h-screen bg-background text-foreground">
       {/* Header */}
@@ -297,6 +309,28 @@ no more missed inquiries.</p>
         <p className="text-xl mb-8 text-muted-foreground max-w-3xl mx-auto">Don't just take our word for it see how GhostNet AI books leads, answers questions, and follows up like clockwork.</p>
         <div id="chat-widget-container" className="mb-8 flex justify-center"></div>
       </section>
+
+      {/* Book Appointment Section */}
+      <section className="container mx-auto px-4 py-16">
+        <div className="max-w-6xl mx-auto">
+          <h3 className="text-4xl md:text-5xl font-bold mb-6 text-center">
+            Book Your Free Strategy Call
+          </h3>
+          <p className="text-xl mb-8 text-muted-foreground text-center max-w-3xl mx-auto">
+            Ready to transform your real estate business? Schedule a personalized consultation to see how GhostNet AI can work for you.
+          </p>
+          <div className="w-full bg-card rounded-lg shadow-lg p-4 md:p-8">
+            <iframe
+              src="https://api.myfreshprintz.com/widget/booking/u6nmCc7Cqm1VZ4R5CuTz"
+              style={{ width: "100%", height: "800px", border: "none", display: "block" }}
+              scrolling="auto"
+              id="u6nmCc7Cqm1VZ4R5CuTz_booking_section"
+              title="Book Appointment Calendar"
+            />
+          </div>
+        </div>
+      </section>
+
 
       {/* Footer */}
       <footer className="border-t border-border py-8">
