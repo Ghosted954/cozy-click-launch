@@ -6,6 +6,13 @@ import { Calendar, MessageSquare, Repeat, Home, CheckCircle2 } from "lucide-reac
 import ghostframeLogo from "@/assets/ghostframe-logo.png";
 const Index = () => {
   const [showBooking, setShowBooking] = useState(false);
+  
+  const scrollToBooking = () => {
+    const bookingSection = document.getElementById('booking-section');
+    if (bookingSection) {
+      bookingSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  };
   useEffect(() => {
     // Load chat widget script
     const container = document.getElementById('chat-widget-container');
@@ -61,7 +68,7 @@ const Index = () => {
           </video>
         </div>
 
-        <Button size="lg" className="text-lg px-8 py-6 bg-primary hover:bg-primary/90" onClick={() => setShowBooking(true)}>
+        <Button size="lg" className="text-lg px-8 py-6 bg-primary hover:bg-primary/90" onClick={scrollToBooking}>
           Activate GhostNet AI
         </Button>
       </section>
@@ -231,7 +238,7 @@ no more missed inquiries.</p>
         </div>
 
         <div className="text-center mt-12">
-          <Button size="lg" onClick={() => setShowBooking(true)} className="bg-primary hover:bg-primary/90">​Activate GhostNet AI</Button>
+          <Button size="lg" onClick={scrollToBooking} className="bg-primary hover:bg-primary/90">​Activate GhostNet AI</Button>
         </div>
       </section>
 
@@ -297,7 +304,7 @@ no more missed inquiries.</p>
         </div>
 
         <div className="text-center mt-12">
-          <Button size="lg" onClick={() => setShowBooking(true)} className="bg-primary hover:bg-primary/90">​Activate GhostNet AI</Button>
+          <Button size="lg" onClick={scrollToBooking} className="bg-primary hover:bg-primary/90">​Activate GhostNet AI</Button>
         </div>
       </section>
 
@@ -311,7 +318,7 @@ no more missed inquiries.</p>
       </section>
 
       {/* Book Appointment Section */}
-      <section className="container mx-auto px-4 py-16">
+      <section id="booking-section" className="container mx-auto px-4 py-16">
         <div className="max-w-6xl mx-auto">
           <h3 className="text-4xl md:text-5xl font-bold mb-6 text-center">
             Book Your Free Strategy Call
