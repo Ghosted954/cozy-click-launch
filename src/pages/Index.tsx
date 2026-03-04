@@ -108,7 +108,7 @@ const Index = () => {
                 <Repeat className="w-8 h-8 text-primary flex-shrink-0" />
                 <div>
                   <h4 className="font-semibold text-lg mb-2">Automatic Follow-ups</h4>
-                  <p className="text-muted-foreground">Sends reminders and re-booking prompts to every client automatically.</p>
+                  <p className="text-muted-foreground"><strong>Rebooks Clients For You</strong><br />Sends reminders and rebooking prompts so your regulars stay regular.</p>
                 </div>
               </div>
             </Card>
