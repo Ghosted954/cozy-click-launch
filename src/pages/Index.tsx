@@ -88,7 +88,7 @@ const Index = () => {
                 <MessageSquare className="w-8 h-8 text-primary flex-shrink-0" />
                 <div>
                   <h4 className="font-semibold text-lg mb-2">24/7 Client Response</h4>
-                  <p className="text-muted-foreground">Answers new client inquiries instantly — no more missed bookings.</p>
+                  <p className="text-muted-foreground"><strong>Never Miss Another Inquiry</strong><br />Answers every call and text instantly so no pet owner slips through the cracks.</p>
                 </div>
               </div>
             </Card>
