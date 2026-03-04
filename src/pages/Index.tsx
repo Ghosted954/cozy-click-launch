@@ -76,9 +76,7 @@ const Index = () => {
         <div className="max-w-4xl mx-auto">
           <h3 className="text-3xl md:text-5xl font-bold mb-8 text-center">While You Groom One Dog, PAW Connect AI Books the Next.</h3>
           <p className="text-lg md:text-xl text-center mb-12 text-muted-foreground">
-            Pet grooming isn't about working harder — it's about never missing a booking. GhostNet AI turns missed
-            calls, texts, and follow-ups into confirmed grooming appointments automatically. While you're working on one
-            pet, your AI assistant is quietly booking the next.
+            Pet grooming isn't about running to the phone. It's about staying focused on the pet in front of you. PAW Connect AI answers missed calls, responds to texts, follows up with pet owners, and books confirmed appointments automatically even while you're mid-groom.
           </p>
           <p className="text-xl font-semibold text-center mb-8">
             Designed for groomers who want more bookings, more returning clients, and more freedom.
@@ -90,7 +88,7 @@ const Index = () => {
                 <MessageSquare className="w-8 h-8 text-primary flex-shrink-0" />
                 <div>
                   <h4 className="font-semibold text-lg mb-2">24/7 Client Response</h4>
-                  <p className="text-muted-foreground">Answers new client inquiries instantly — no more missed bookings.</p>
+                  <p className="text-muted-foreground"><strong>Never Miss Another Inquiry</strong><br />Answers every call and text instantly so no pet owner slips through the cracks.</p>
                 </div>
               </div>
             </Card>
@@ -100,7 +98,7 @@ const Index = () => {
                 <Calendar className="w-8 h-8 text-primary flex-shrink-0" />
                 <div>
                   <h4 className="font-semibold text-lg mb-2">Smart Scheduling</h4>
-                  <p className="text-muted-foreground">Books grooming appointments directly into your calendar.</p>
+                  <p className="text-muted-foreground"><strong>Books Directly Into Your Calendar</strong><br />Confirmed appointments, placed automatically into your existing booking system.</p>
                 </div>
               </div>
             </Card>
@@ -110,7 +108,7 @@ const Index = () => {
                 <Repeat className="w-8 h-8 text-primary flex-shrink-0" />
                 <div>
                   <h4 className="font-semibold text-lg mb-2">Automatic Follow-ups</h4>
-                  <p className="text-muted-foreground">Sends reminders and re-booking prompts to every client automatically.</p>
+                  <p className="text-muted-foreground"><strong>Rebooks Clients For You</strong><br />Sends reminders and rebooking prompts so your regulars stay regular.</p>
                 </div>
               </div>
             </Card>
@@ -120,7 +118,7 @@ const Index = () => {
                 <Scissors className="w-8 h-8 text-primary flex-shrink-0" />
                 <div>
                   <h4 className="font-semibold text-lg mb-2">Client Retention</h4>
-                  <p className="text-muted-foreground">Keeps your chair full with repeat clients, even on your days off.</p>
+                  <p className="text-muted-foreground"><strong>Keeps Your Schedule Full Year-Round</strong><br />Fills slow days and reduces last-minute gaps.</p>
                 </div>
               </div>
             </Card>
@@ -130,7 +128,7 @@ const Index = () => {
 
       {/* Who This Is For */}
       <section className="container mx-auto px-4 py-16">
-        <h3 className="text-4xl md:text-5xl font-bold mb-12 text-center">Who This Is For</h3>
+        <h3 className="text-4xl md:text-5xl font-bold mb-12 text-center">This Is For You If You're Tired of Missing Calls.</h3>
         <div className="max-w-3xl mx-auto grid md:grid-cols-2 gap-6">
           {["Groomers tired of missing calls from pet owners trying to book", "Solo stylists juggling too many texts and follow-ups manually", "Small grooming salons looking to compete with bigger chains", "Groomers who want a fully booked schedule without constantly marketing", "Shops that need an AI assistant to confirm and reschedule appointments automatically", "Professionals ready to look more organized and responsive to clients", "Groomers who lose clients after hours when no one answers", "Mobile groomers without a front-desk receptionist", "Pet grooming businesses that want to grow without hiring more staff"].map((item, index) => <div key={index} className="flex items-start gap-3">
               <CheckCircle2 className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
