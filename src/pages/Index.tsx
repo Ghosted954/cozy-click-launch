@@ -118,7 +118,7 @@ const Index = () => {
                 <Scissors className="w-8 h-8 text-primary flex-shrink-0" />
                 <div>
                   <h4 className="font-semibold text-lg mb-2">Client Retention</h4>
-                  <p className="text-muted-foreground">Keeps your chair full with repeat clients, even on your days off.</p>
+                  <p className="text-muted-foreground"><strong>Keeps Your Schedule Full Year-Round</strong><br />Fills slow days and reduces last-minute gaps.</p>
                 </div>
               </div>
             </Card>
