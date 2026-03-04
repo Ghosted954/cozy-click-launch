@@ -74,9 +74,7 @@ const Index = () => {
       {/* Value Proposition */}
       <section className="container mx-auto px-4 py-16">
         <div className="max-w-4xl mx-auto">
-          <h3 className="text-3xl md:text-5xl font-bold mb-8 text-center">
-
-        </h3>
+          <h3 className="text-3xl md:text-5xl font-bold mb-8 text-center">While You Groom One Dog, PAW Connect AI Books the Next.</h3>
           <p className="text-lg md:text-xl text-center mb-12 text-muted-foreground">
             Pet grooming isn't about working harder — it's about never missing a booking. GhostNet AI turns missed
             calls, texts, and follow-ups into confirmed grooming appointments automatically. While you're working on one
