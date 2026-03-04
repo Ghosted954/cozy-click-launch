@@ -6,7 +6,7 @@ import { Calendar, MessageSquare, Repeat, Scissors, CheckCircle2 } from "lucide-
 import ghostframeLogo from "@/assets/ghostframe-logo.png";
 const Index = () => {
   const [showBooking, setShowBooking] = useState(false);
-  
+
   const scrollToBooking = () => {
     const bookingSection = document.getElementById('booking-section');
     if (bookingSection) {
@@ -53,9 +53,9 @@ const Index = () => {
       {/* Hero Section */}
       <section className="container mx-auto px-4 py-16 text-center">
         <p className="text-sm text-muted-foreground mb-6">We build systems that never sleep</p>
-        <h2 className="text-4xl md:text-6xl font-bold mb-6 text-primary">
-          Never Miss Another Grooming Appointment Or New Client Ever Again.
-        </h2>
+        <h2 className="text-4xl md:text-6xl font-bold mb-6 text-primary">Never Mi
+
+      </h2>
         <p className="text-xl md:text-2xl mb-12 max-w-4xl mx-auto">
           GhostNet AI answers your calls, follows up with pet owners, and books grooming appointments 24/7 so you can focus on
           your clients, not callbacks.
@@ -229,12 +229,12 @@ const Index = () => {
           </p>
           <div className="w-full bg-card rounded-lg shadow-lg p-4 md:p-8">
             <iframe
-              src="https://api.myfreshprintz.com/widget/booking/u6nmCc7Cqm1VZ4R5CuTz"
-              style={{ width: "100%", height: "800px", border: "none", display: "block" }}
-              scrolling="auto"
-              id="u6nmCc7Cqm1VZ4R5CuTz_booking_section"
-              title="Book Appointment Calendar"
-            />
+            src="https://api.myfreshprintz.com/widget/booking/u6nmCc7Cqm1VZ4R5CuTz"
+            style={{ width: "100%", height: "800px", border: "none", display: "block" }}
+            scrolling="auto"
+            id="u6nmCc7Cqm1VZ4R5CuTz_booking_section"
+            title="Book Appointment Calendar" />
+          
           </div>
         </div>
       </section>
