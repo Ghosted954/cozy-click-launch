@@ -53,13 +53,13 @@ const Index = () => {
       {/* Hero Section */}
       <section className="container mx-auto px-4 py-16 text-center">
         <p className="text-sm text-muted-foreground mb-6">We build systems that never sleep</p>
-        <h2 className="text-4xl md:text-6xl font-bold mb-6 text-primary">Never Mi
+        <h2 className="text-4xl md:text-6xl font-bold mb-6 text-primary">
 
       </h2>
-        <p className="text-xl md:text-2xl mb-12 max-w-4xl mx-auto">
-          GhostNet AI answers your calls, follows up with pet owners, and books grooming appointments 24/7 so you can focus on
-          your clients, not callbacks.
-        </p>
+        <p className="text-xl md:text-2xl mb-12 max-w-4xl mx-auto">PAW Connect AI answers every call, follows up by text, books appointments, and fills your calendar 24/7.
+
+
+      </p>
         
         <div className="max-w-4xl mx-auto mb-12">
           <video className="w-full rounded-lg shadow-lg" controls autoPlay muted loop playsInline>
@@ -77,8 +77,8 @@ const Index = () => {
       <section className="container mx-auto px-4 py-16">
         <div className="max-w-4xl mx-auto">
           <h3 className="text-3xl md:text-5xl font-bold mb-8 text-center">
-            What If You Could Fill Your Grooming Schedule Without Lifting a Finger?
-          </h3>
+
+        </h3>
           <p className="text-lg md:text-xl text-center mb-12 text-muted-foreground">
             Pet grooming isn't about working harder — it's about never missing a booking. GhostNet AI turns missed
             calls, texts, and follow-ups into confirmed grooming appointments automatically. While you're working on one
