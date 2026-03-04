@@ -98,7 +98,7 @@ const Index = () => {
                 <Calendar className="w-8 h-8 text-primary flex-shrink-0" />
                 <div>
                   <h4 className="font-semibold text-lg mb-2">Smart Scheduling</h4>
-                  <p className="text-muted-foreground">Books grooming appointments directly into your calendar.</p>
+                  <p className="text-muted-foreground"><strong>Books Directly Into Your Calendar</strong><br />Confirmed appointments, placed automatically into your existing booking system.</p>
                 </div>
               </div>
             </Card>
