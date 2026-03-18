@@ -150,8 +150,8 @@ const Index = () => {
         <h3 className="text-4xl md:text-5xl font-bold mb-12 text-center">Built Specifically for Pet Groomers Not Generic Businesses</h3>
         <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
           <Card className="p-8 border-border bg-card">
-            <h4 className="text-2xl font-bold mb-4">Built Specifically for Pet Groomers Not Generic Businesses</h4>
-            <p className="text-muted-foreground">Most automation tools are built for generic businesses. GhostFrame builds from the inside out, creating systems specifically trained on pet grooming workflows — from breed-specific services to seasonal demand spikes.</p>
+            <h4 className="text-2xl font-bold mb-4">Designed Specifically for Pet Groomers</h4>
+            <p className="text-muted-foreground">Most AI tools are built for generic businesses. PAW Connect AI is trained around real pet grooming workflows — from breed-specific services to seasonal demand spikes — so it responds the way a grooming shop actually operates.</p>
           </Card>
 
           <Card className="p-8 border-border bg-card">
