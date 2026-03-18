@@ -175,38 +175,35 @@ const Index = () => {
 
       {/* How It Works */}
       <section className="container mx-auto px-4 py-16">
-        <h3 className="text-4xl md:text-5xl font-bold mb-12 text-center">From Missed Calls to Fully Booked. Here's How It Works.</h3>
+        <h3 className="text-4xl md:text-5xl font-bold mb-12 text-center">From Missed Calls to Booked Appointments. Here's How It Works.</h3>
         <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
           <Card className="p-8 border-border bg-card text-center">
             <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-6">
               <span className="text-3xl font-bold text-primary">1</span>
             </div>
-            <h4 className="text-2xl font-bold mb-4">Connect</h4>
-            <p className="text-muted-foreground">
-              We start by learning how your grooming business works — your services, your schedule, and your clients. Then we customize your
-              AI assistant to sound just like you and plug it directly into your booking flow.
-            </p>
+            <h4 className="text-2xl font-bold mb-4">Set Up</h4>
+            <p className="text-muted-foreground">We set up PAW Connect AI around your grooming business, your services, pricing, availability, and booking system, so it works exactly like your shop already does.</p>
           </Card>
 
           <Card className="p-8 border-border bg-card text-center">
             <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-6">
               <span className="text-3xl font-bold text-primary">2</span>
             </div>
-            <h4 className="text-2xl font-bold mb-4">Automate</h4>
-            <p className="text-muted-foreground">Once everything's connected, your AI begins doing the heavy lifting — booking grooming appointments, sending reminders, and answering common pet owner questions automatically.</p>
+            <h4 className="text-2xl font-bold mb-4">It Answers</h4>
+            <p className="text-muted-foreground">Every call gets answered instantly. PAW Connect AI speaks naturally, gathers details, checks availability, and books appointments so no pet owner ever hits voicemail.</p>
           </Card>
 
           <Card className="p-8 border-border bg-card text-center">
             <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-6">
               <span className="text-3xl font-bold text-primary">3</span>
             </div>
-            <h4 className="text-2xl font-bold mb-4">Scale</h4>
-            <p className="text-muted-foreground">Now that your systems are running in the background, you can focus on what matters — grooming happy pets. Your AI keeps booking new clients, requesting reviews, and re-engaging lapsed ones.</p>
+            <h4 className="text-2xl font-bold mb-4">You Stop Losing Money</h4>
+            <p className="text-muted-foreground">No more missed calls. No more lost clients. Your calendar stays full while you focus on grooming, not chasing callbacks.</p>
           </Card>
         </div>
 
         <div className="text-center mt-12">
-          <Button size="lg" onClick={scrollToBooking} className="bg-primary hover:bg-primary/90">​Activate GhostNet AI</Button>
+          <Button size="lg" onClick={scrollToBooking} className="bg-primary hover:bg-primary/90">Activate GhostNet AI</Button>
         </div>
       </section>
 
