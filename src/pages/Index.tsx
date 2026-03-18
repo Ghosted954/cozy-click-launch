@@ -130,7 +130,7 @@ const Index = () => {
       <section className="container mx-auto px-4 py-16">
         <h3 className="text-4xl md:text-5xl font-bold mb-12 text-center">This Is For You If You're Tired of Missing Calls.</h3>
         <div className="max-w-3xl mx-auto grid md:grid-cols-2 gap-6">
-          {["Groomers tired of missing calls from pet owners trying to book", "Solo stylists juggling too many texts and follow-ups manually", "Small grooming salons looking to compete with bigger chains", "Groomers who want a fully booked schedule without constantly marketing", "Shops that need an AI assistant to confirm and reschedule appointments automatically", "Professionals ready to look more organized and responsive to clients", "Groomers who lose clients after hours when no one answers", "Mobile groomers without a front-desk receptionist", "Pet grooming businesses that want to grow without hiring more staff"].map((item, index) => <div key={index} className="flex items-start gap-3">
+          {["Groomers losing new clients because they can't answer every call", "Shops that miss bookings after hours or on busy days", "Solo groomers juggling texts, voicemails, and DMs manually", "Businesses that can't afford a full-time receptionist", "Groomers tired of playing phone tag with pet owners"].map((item, index) => <div key={index} className="flex items-start gap-3">
               <CheckCircle2 className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
               <p className="text-lg">{item}</p>
             </div>)}
