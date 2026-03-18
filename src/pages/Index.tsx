@@ -147,7 +147,7 @@ const Index = () => {
 
       {/* What Makes Us Different */}
       <section className="container mx-auto px-4 py-16">
-        <h3 className="text-4xl md:text-5xl font-bold mb-12 text-center">What Makes Us Different</h3>
+        <h3 className="text-4xl md:text-5xl font-bold mb-12 text-center">Built Specifically for Pet Groomers Not Generic Businesses</h3>
         <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
           <Card className="p-8 border-border bg-card">
             <h4 className="text-2xl font-bold mb-4">Built Specifically for Pet Groomers Not Generic Businesses</h4>
