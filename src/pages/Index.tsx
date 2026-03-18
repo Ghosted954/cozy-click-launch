@@ -162,13 +162,13 @@ const Index = () => {
           </Card>
 
           <Card className="p-8 border-border bg-card">
-            <h4 className="text-2xl font-bold mb-4">Real-Time Monitoring & Support</h4>
-            <p className="text-muted-foreground">We personally monitor client systems around the clock, receiving instant alerts for new bookings, missed calls, and performance activity. Your system doesn't just run — it learns, improves, and fills more appointments every single week.</p>
+            <h4 className="text-2xl font-bold mb-4">We Don't Just Set It Up — We Support It.</h4>
+            <p className="text-muted-foreground">We monitor your system behind the scenes, tracking missed calls, bookings, and performance. If something needs attention, we handle it — so your AI keeps working without interruption.</p>
           </Card>
 
           <Card className="p-8 border-border bg-card">
-            <h4 className="text-2xl font-bold mb-4">Tailored AI That Sounds Like You</h4>
-            <p className="text-muted-foreground">Most AI setups sound robotic and generic. GhostFrame's agents are trained to match your tone, your brand, and your pet-loving clientele. It's not just automation — it's warm, authentic communication that keeps clients coming back.</p>
+            <h4 className="text-2xl font-bold mb-4">AI That Sounds Like Your Shop — Not a Robot</h4>
+            <p className="text-muted-foreground">Most AI systems feel cold and scripted. PAW Connect AI is trained to match your tone, your services, and your brand — creating conversations that feel natural to pet owners.</p>
           </Card>
         </div>
       </section>
