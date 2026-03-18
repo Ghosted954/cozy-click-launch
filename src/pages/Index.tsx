@@ -129,11 +129,19 @@ const Index = () => {
       {/* Who This Is For */}
       <section className="container mx-auto px-4 py-16">
         <h3 className="text-4xl md:text-5xl font-bold mb-12 text-center">This Is For You If You're Tired of Missing Calls.</h3>
-        <div className="max-w-3xl mx-auto grid md:grid-cols-2 gap-6">
-          {["Groomers losing new clients because they can't answer every call", "Shops that miss bookings after hours or on busy days", "Solo groomers juggling texts, voicemails, and DMs manually", "Businesses that can't afford a full-time receptionist", "Groomers tired of playing phone tag with pet owners"].map((item, index) => <div key={index} className="flex items-start gap-3">
-              <CheckCircle2 className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
-              <p className="text-lg">{item}</p>
-            </div>)}
+        <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-x-12 gap-y-4">
+          <div className="space-y-4">
+            {["Groomers losing new clients because they can't answer every call", "Shops that miss bookings after hours or on busy days", "Solo groomers juggling texts, voicemails, and DMs manually", "Businesses that can't afford a full-time receptionist", "Groomers tired of playing phone tag with pet owners"].map((item, index) => <div key={index} className="flex items-start gap-3">
+                <CheckCircle2 className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
+                <p className="text-lg">{item}</p>
+              </div>)}
+          </div>
+          <div className="space-y-4">
+            {["Groomers who want a fully booked schedule without hiring staff", "Mobile groomers working without a front desk", "Small salons competing with big-name chains", "Professionals who want to look faster, smarter, and more organized", "Owners ready to scale without adding payroll"].map((item, index) => <div key={index} className="flex items-start gap-3">
+                <CheckCircle2 className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
+                <p className="text-lg">{item}</p>
+              </div>)}
+          </div>
         </div>
       </section>
 
