@@ -155,10 +155,9 @@ const Index = () => {
           </Card>
 
           <Card className="p-8 border-border bg-card">
-            <h4 className="text-2xl font-bold mb-4">Always Upgrading, Never Outdated</h4>
+            <h4 className="text-2xl font-bold mb-4">Set It Up Once. It Keeps Getting Smarter.</h4>
             <p className="text-muted-foreground">
-              Your business evolves and your systems should too. GhostNet AI adapts as technology changes, so every
-              upgrade, every new feature, and every improvement can be seamlessly added without rebuilding from scratch.
+              As your grooming business grows, PAW Connect AI adjusts with you. Updates, improvements, and new features are added without you having to rebuild anything or learn new systems.
             </p>
           </Card>
 
