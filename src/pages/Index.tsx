@@ -220,10 +220,10 @@ const Index = () => {
       <section id="booking-section" className="container mx-auto px-4 py-16">
         <div className="max-w-6xl mx-auto">
           <h3 className="text-4xl md:text-5xl font-bold mb-6 text-center">
-            Book Your Free Strategy Call
+            See If PAW Connect AI Is Right for Your Grooming Shop
           </h3>
           <p className="text-xl mb-8 text-muted-foreground text-center max-w-3xl mx-auto">
-            Ready to transform your pet grooming business? Schedule a personalized consultation to see how GhostNet AI can work for you.
+            In this 30-minute call, we'll show you how PAW Connect AI answers missed calls, books appointments automatically, and fits into your current system. If it's a good fit, we'll walk you through next steps.
           </p>
           <div className="w-full bg-card rounded-lg shadow-lg p-4 md:p-8">
             <iframe
