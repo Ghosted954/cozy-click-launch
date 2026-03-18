@@ -74,7 +74,7 @@ const Index = () => {
       {/* Value Proposition */}
       <section className="container mx-auto px-4 py-16">
         <div className="max-w-4xl mx-auto">
-          <h3 className="text-3xl md:text-5xl font-bold mb-8 text-center">While You Groom One Dog, PAW Connect AI Books the Next.</h3>
+          <h3 className="text-3xl md:text-5xl font-bold mb-8 text-center">What Happens When a Pet Owner Calls and You Can't Answer</h3>
           <p className="text-lg md:text-xl text-center mb-12 text-muted-foreground">
             Pet grooming isn't about running to the phone. It's about staying focused on the pet in front of you. PAW Connect AI answers missed calls, responds to texts, follows up with pet owners, and books confirmed appointments automatically even while you're mid-groom.
           </p>
