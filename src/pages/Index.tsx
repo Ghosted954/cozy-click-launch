@@ -162,13 +162,13 @@ const Index = () => {
           </Card>
 
           <Card className="p-8 border-border bg-card">
-            <h4 className="text-2xl font-bold mb-4">We Don't Just Set It Up — We Support It.</h4>
-            <p className="text-muted-foreground">We monitor your system behind the scenes, tracking missed calls, bookings, and performance. If something needs attention, we handle it — so your AI keeps working without interruption.</p>
+            <h4 className="text-2xl font-bold mb-4">We Don't Just Set It Up. We Support It.</h4>
+            <p className="text-muted-foreground">We monitor your system behind the scenes, tracking missed calls, bookings, and performance. If something needs attention, we handle it so your AI keeps working without interruption.</p>
           </Card>
 
           <Card className="p-8 border-border bg-card">
-            <h4 className="text-2xl font-bold mb-4">AI That Sounds Like Your Shop — Not a Robot</h4>
-            <p className="text-muted-foreground">Most AI systems feel cold and scripted. PAW Connect AI is trained to match your tone, your services, and your brand — creating conversations that feel natural to pet owners.</p>
+            <h4 className="text-2xl font-bold mb-4">AI That Sounds Like Your Shop, Not a Robot</h4>
+            <p className="text-muted-foreground">Most AI systems feel cold and scripted. PAW Connect AI is trained to match your tone, your services, and your brand, creating conversations that feel natural to pet owners.</p>
           </Card>
         </div>
       </section>
