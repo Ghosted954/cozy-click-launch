@@ -150,7 +150,7 @@ const Index = () => {
         <h3 className="text-4xl md:text-5xl font-bold mb-12 text-center">What Makes Us Different</h3>
         <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
           <Card className="p-8 border-border bg-card">
-            <h4 className="text-2xl font-bold mb-4">Built for Pet Businesses, Not Generic Ones</h4>
+            <h4 className="text-2xl font-bold mb-4">Built Specifically for Pet Groomers Not Generic Businesses</h4>
             <p className="text-muted-foreground">Most automation tools are built for generic businesses. GhostFrame builds from the inside out, creating systems specifically trained on pet grooming workflows — from breed-specific services to seasonal demand spikes.</p>
           </Card>
 
