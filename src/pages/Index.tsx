@@ -54,7 +54,7 @@ const Index = () => {
       <section className="container mx-auto px-4 py-16 text-center">
         <p className="text-sm text-muted-foreground mb-6">We build systems that never sleep</p>
         <h2 className="text-4xl md:text-6xl font-bold mb-6 text-primary">Turn Missed Calls Into Booked Grooming Appointments Automatically.</h2>
-        <p className="text-xl md:text-2xl mb-12 max-w-4xl mx-auto">PAW Connect AI answers every call, follows up by text, books appointments, and fills your calendar 24/7.
+        <p className="text-xl md:text-2xl mb-12 max-w-4xl mx-auto">PAW Connect AI answers every call, books appointments, and fills your calendar 24/7.
 
 
       </p>
