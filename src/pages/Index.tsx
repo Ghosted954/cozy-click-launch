@@ -132,7 +132,7 @@ Answers every call and books instantly so no pet owner slips through the cracks.
         <h3 className="text-4xl md:text-5xl font-bold mb-12 text-center">This Is For You If You're Tired of Missing Calls.</h3>
         <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-x-12 gap-y-4">
           <div className="space-y-4">
-            {["Groomers losing new clients because they can't answer every call", "Shops that miss bookings after hours or on busy days", "Solo groomers juggling texts, voicemails, and DMs manually", "Businesses that can't afford a full-time receptionist", "Groomers tired of playing phone tag with pet owners"].map((item, index) => <div key={index} className="flex items-start gap-3">
+            {["Groomers losing new clients because they can't answer every call", "Shops that miss bookings after hours or on busy days", "Solo groomers juggling calls, voicemails, and constant callbacks", "Businesses that can't afford a full-time receptionist", "Groomers tired of playing phone tag with pet owners"].map((item, index) => <div key={index} className="flex items-start gap-3">
                 <CheckCircle2 className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
                 <p className="text-lg">{item}</p>
               </div>)}
