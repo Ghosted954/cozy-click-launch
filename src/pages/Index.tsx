@@ -16,7 +16,7 @@ const Index = () => {
   useEffect(() => {
     // Load chat widget script
     const container = document.getElementById('chat-widget-container');
-    if (container) {
+    if (container && !container.querySelector('script')) {
       const script = document.createElement('script');
       script.src = 'https://widgets.leadconnectorhq.com/loader.js';
       script.setAttribute('data-resources-url', 'https://widgets.leadconnectorhq.com/chat-widget/loader.js');
@@ -25,20 +25,12 @@ const Index = () => {
     }
 
     // Load booking calendar embed script
-    const bookingScript = document.createElement('script');
-    bookingScript.src = 'https://api.myfreshprintz.com/js/form_embed.js';
-    bookingScript.type = 'text/javascript';
-    document.body.appendChild(bookingScript);
-
-    return () => {
-      if (container && container.contains(document.querySelector('script[src="https://widgets.leadconnectorhq.com/loader.js"]'))) {
-        const chatScript = container.querySelector('script');
-        if (chatScript) container.removeChild(chatScript);
-      }
-      if (document.body.contains(bookingScript)) {
-        document.body.removeChild(bookingScript);
-      }
-    };
+    if (!document.querySelector('script[src="https://api.myfreshprintz.com/js/form_embed.js"]')) {
+      const bookingScript = document.createElement('script');
+      bookingScript.src = 'https://api.myfreshprintz.com/js/form_embed.js';
+      bookingScript.type = 'text/javascript';
+      document.body.appendChild(bookingScript);
+    }
   }, []);
   return <div className="min-h-screen bg-background text-foreground">
       {/* Header */}
