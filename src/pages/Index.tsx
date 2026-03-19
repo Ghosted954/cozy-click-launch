@@ -14,22 +14,48 @@ const Index = () => {
     }
   };
   useEffect(() => {
-    // Load chat widget script
     const container = document.getElementById('chat-widget-container');
-    if (container && !container.querySelector('script')) {
+    const chatLoaderSrc = 'https://widgets.leadconnectorhq.com/loader.js';
+
+    if (container) {
+      container.style.maxWidth = '320px';
+      container.style.marginInline = 'auto';
+      container.style.overflow = 'hidden';
+
+      document.querySelectorAll(`script[src="${chatLoaderSrc}"]`).forEach((node) => node.remove());
+      document.querySelectorAll('chat-widget').forEach((node) => node.remove());
+      container.innerHTML = '';
+
+      const keepSingleWidget = () => {
+        const widgetNodes = Array.from(container.children).filter(
+          (node) => (node as HTMLElement).tagName.toLowerCase() !== 'script'
+        );
+
+        widgetNodes.slice(1).forEach((node) => node.remove());
+      };
+
       const script = document.createElement('script');
-      script.src = 'https://widgets.leadconnectorhq.com/loader.js';
+      script.src = chatLoaderSrc;
       script.setAttribute('data-resources-url', 'https://widgets.leadconnectorhq.com/chat-widget/loader.js');
       script.setAttribute('data-widget-id', '6903cdb8d6df2a2f15d97915');
       container.appendChild(script);
-    }
 
-    // Load booking calendar embed script
-    if (!document.querySelector('script[src="https://api.myfreshprintz.com/js/form_embed.js"]')) {
-      const bookingScript = document.createElement('script');
-      bookingScript.src = 'https://api.myfreshprintz.com/js/form_embed.js';
-      bookingScript.type = 'text/javascript';
-      document.body.appendChild(bookingScript);
+      const observer = new MutationObserver(keepSingleWidget);
+      observer.observe(container, { childList: true });
+      const dedupeTimer = window.setTimeout(keepSingleWidget, 1500);
+
+      // Load booking calendar embed script
+      if (!document.querySelector('script[src="https://api.myfreshprintz.com/js/form_embed.js"]')) {
+        const bookingScript = document.createElement('script');
+        bookingScript.src = 'https://api.myfreshprintz.com/js/form_embed.js';
+        bookingScript.type = 'text/javascript';
+        document.body.appendChild(bookingScript);
+      }
+
+      return () => {
+        observer.disconnect();
+        window.clearTimeout(dedupeTimer);
+      };
     }
   }, []);
   return <div className="min-h-screen bg-background text-foreground">
