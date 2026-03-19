@@ -132,7 +132,7 @@ Answers every call and books instantly so no pet owner slips through the cracks.
         <h3 className="text-4xl md:text-5xl font-bold mb-12 text-center">This Is For You If You're Tired of Missing Calls.</h3>
         <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-x-12 gap-y-4">
           <div className="space-y-4">
-            {["Groomers losing new clients because they can't answer every call", "Shops that miss bookings after hours or on busy days", "Solo groomers juggling calls, voicemails, and constant callbacks.", "Businesses that can't afford a full-time receptionist", "Groomers tired of playing phone tag with pet owners"].map((item, index) => <div key={index} className="flex items-start gap-3">
+            {["Groomers losing new clients because they can't answer every call", "Shops that miss bookings after hours or on busy days", "Solo groomers juggling texts, voicemails, and DMs manually", "Businesses that can't afford a full-time receptionist", "Groomers tired of playing phone tag with pet owners"].map((item, index) => <div key={index} className="flex items-start gap-3">
                 <CheckCircle2 className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
                 <p className="text-lg">{item}</p>
               </div>)}
@@ -223,9 +223,9 @@ Answers every call and books instantly so no pet owner slips through the cracks.
           <h3 className="text-4xl md:text-5xl font-bold mb-6 text-center">
             See If PAW Connect AI Is Right for Your Grooming Shop
           </h3>
-          <p className="text-xl mb-8 text-muted-foreground text-center max-w-3xl mx-auto">
-            In this 30-minute call, we'll show you how PAW Connect AI answers missed calls, books appointments automatically, and fits into your current system. If it's a good fit, we'll walk you through next steps.
-          </p>
+          <p className="text-xl mb-8 text-muted-foreground text-center max-w-3xl mx-auto">In this 30-minute call, we’ll show you how PAW Connect AI answers every call instantly, books appointments automatically, and keeps your schedule full without you chasing callbacks. If it’s a good fit, we’ll walk you through next steps.
+
+        </p>
           <div className="w-full bg-card rounded-lg shadow-lg p-4 md:p-8">
             <iframe src="https://api.myfreshprintz.com/widget/booking/u6nmCc7Cqm1VZ4R5CuTz"
           style={{ width: "100%", height: "800px", border: "none", display: "block" }}
