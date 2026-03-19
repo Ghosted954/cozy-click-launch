@@ -231,7 +231,7 @@ Answers every call and books instantly so no pet owner slips through the cracks.
         <h3 className="text-4xl md:text-5xl font-bold mb-8">
           What Happens When a Pet Owner Calls and You Can't Answer
         </h3>
-        <p className="text-xl mb-8 text-muted-foreground max-w-3xl mx-auto">Call the demo line below and hear how PAW Connect AI answers and books just like it would for your grooming shop.</p>
+        <p className="text-xl mb-8 text-muted-foreground max-w-3xl mx-auto">Call the demo below and hear how PAW Connect AI answers and books just like it would for your grooming shop.</p>
         <div id="chat-widget-container" className="mb-8 flex justify-center"></div>
       </section>
 
