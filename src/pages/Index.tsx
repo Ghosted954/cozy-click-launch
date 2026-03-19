@@ -88,7 +88,8 @@ const Index = () => {
                 <MessageSquare className="w-8 h-8 text-primary flex-shrink-0" />
                 <div>
                   <h4 className="font-semibold text-lg mb-2">24/7 Client Response</h4>
-                  <p className="text-muted-foreground"><strong>Never Miss Another Inquiry</strong><br />Answers every call and text instantly so no pet owner slips through the cracks.</p>
+                  <p className="text-muted-foreground"><strong>Never Miss Another Inquiry</strong><br />Never Miss Another Inquiry
+Answers every call and books instantly so no pet owner slips through the cracks.</p>
                 </div>
               </div>
             </Card>
@@ -226,12 +227,11 @@ const Index = () => {
             In this 30-minute call, we'll show you how PAW Connect AI answers missed calls, books appointments automatically, and fits into your current system. If it's a good fit, we'll walk you through next steps.
           </p>
           <div className="w-full bg-card rounded-lg shadow-lg p-4 md:p-8">
-            <iframe
-            src="https://api.myfreshprintz.com/widget/booking/u6nmCc7Cqm1VZ4R5CuTz"
-            style={{ width: "100%", height: "800px", border: "none", display: "block" }}
-            scrolling="auto"
-            id="u6nmCc7Cqm1VZ4R5CuTz_booking_section"
-            title="Book Appointment Calendar" />
+            <iframe src="https://api.myfreshprintz.com/widget/booking/u6nmCc7Cqm1VZ4R5CuTz"
+          style={{ width: "100%", height: "800px", border: "none", display: "block" }}
+          scrolling="auto"
+          id="u6nmCc7Cqm1VZ4R5CuTz_booking_section"
+          title="Book Appointment Calendar" />
           
           </div>
         </div>
