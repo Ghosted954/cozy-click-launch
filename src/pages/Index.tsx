@@ -75,9 +75,9 @@ const Index = () => {
       <section className="container mx-auto px-4 py-16">
         <div className="max-w-4xl mx-auto">
           <h3 className="text-3xl md:text-5xl font-bold mb-8 text-center">Built Specifically for Pet Groomers Not Generic Businesses</h3>
-          <p className="text-lg md:text-xl text-center mb-12 text-muted-foreground">
-            Pet grooming isn't about running to the phone. It's about staying focused on the pet in front of you. PAW Connect AI answers missed calls, follows up with pet owners, and books confirmed appointments automatically even while you're mid-groom.
-          </p>
+          <p className="text-lg md:text-xl text-center mb-12 text-muted-foreground">Pet grooming isn't about running to the phone. It's about staying focused on the pet in front of you. PAW Connect AI answers calls instantly, follows up with pet owners, and books confirmed appointments automatically even while you're mid-groom.
+
+        </p>
           <p className="text-xl font-semibold text-center mb-8">
             Designed for groomers who want more bookings, more returning clients, and more freedom.
           </p>
