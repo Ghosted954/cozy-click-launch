@@ -67,7 +67,7 @@ const Index = () => {
         </div>
 
         <Button size="lg" className="text-lg px-8 py-6 bg-primary hover:bg-primary/90" onClick={scrollToBooking}>
-          Activate GhostNet AI
+          SeeHowItWorks
         </Button>
       </section>
 
