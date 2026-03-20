@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { BookingDialog } from "@/components/BookingDialog";
 import { Calendar, MessageSquare, Repeat, Scissors, CheckCircle2 } from "lucide-react";
-import ghostframeLogo from "@/assets/ghostframe-logo.png";
+import pawConnectLogo from "@/assets/paw-connect-logo.png";
 const Index = () => {
   const [showBooking, setShowBooking] = useState(false);
 
@@ -63,7 +63,7 @@ const Index = () => {
       <header className="border-b border-border">
         <div className="container mx-auto px-4 py-6">
           <div className="flex justify-center">
-            <img src={ghostframeLogo} alt="GhostFrame Marketing" className="h-20" />
+            <img src={pawConnectLogo} alt="PAW Connect AI" className="h-20" />
           </div>
         </div>
       </header>
