@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { BookingDialog } from "@/components/BookingDialog";
 import { Calendar, MessageSquare, Repeat, Scissors, CheckCircle2 } from "lucide-react";
-import ghostframeLogo from "@/assets/ghostframe-logo.png";
+import pawConnectLogo from "@/assets/paw-connect-logo.png";
 const Index = () => {
   const [showBooking, setShowBooking] = useState(false);
 
