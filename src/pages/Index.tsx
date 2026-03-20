@@ -63,7 +63,7 @@ const Index = () => {
       <header className="border-b border-border">
         <div className="container mx-auto px-4 py-6">
           <div className="flex justify-center">
-            <img src={ghostframeLogo} alt="GhostFrame Marketing" className="h-20" />
+            <img src={pawConnectLogo} alt="PAW Connect AI" className="h-20" />
           </div>
         </div>
       </header>
