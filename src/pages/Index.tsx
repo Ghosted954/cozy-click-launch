@@ -79,7 +79,7 @@ const Index = () => {
         
         <div className="max-w-4xl mx-auto mb-12">
           <video className="w-full rounded-lg shadow-lg" controls autoPlay muted loop playsInline>
-            <source src="/videos/explainer.mp4" type="video/mp4" />
+            <source src="/videos/explainer.mp4?v=2" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
         </div>
