@@ -11,6 +11,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { BookingDialog } from "@/components/BookingDialog";
+import campaignResults from "@/assets/campaign-results.png";
 import {
   ArrowRight,
   Sparkles,
