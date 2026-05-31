@@ -333,29 +333,36 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Testimonials */}
+      {/* Case Study */}
       <section className="relative py-28 border-t border-border/60">
         <div className="container mx-auto px-6 max-w-6xl">
-          <div className="text-center mb-16">
-            <div className="text-xs uppercase tracking-[0.2em] text-primary mb-4">Client Feedback</div>
-            <h2 className="text-4xl md:text-6xl font-bold tracking-tight">What Businesses Are Saying</h2>
+          <div className="text-center mb-12">
+            <div className="text-xs uppercase tracking-[0.2em] text-primary mb-4">Case Study</div>
+            <h2 className="text-4xl md:text-6xl font-bold tracking-tight">
+              Recent Campaign <span className="text-gradient">Results</span>
+            </h2>
+            <p className="mt-4 text-lg md:text-xl text-primary/90 font-medium">Real Campaign. Real Results.</p>
+            <p className="mt-4 max-w-2xl mx-auto text-muted-foreground">
+              A recent local hair salon campaign powered by strategic ads, automation, and performance-focused marketing systems.
+            </p>
           </div>
-          <div className="grid md:grid-cols-3 gap-6">
-            {[
-              "Ghostframe helped us improve follow-up and create a much smoother process for handling leads.",
-              "The automation systems saved us time and helped us respond to customers faster.",
-              "Professional, modern, and focused on real business growth.",
-            ].map((quote, i) => (
-              <Card key={i} className="relative p-8 bg-card border-border hover:border-primary/60 transition group">
-                <Quote className="w-8 h-8 text-primary/60 mb-4" />
-                <p className="text-lg leading-relaxed text-foreground/90">"{quote}"</p>
-                <div className="flex gap-1 mt-6">
-                  {Array.from({ length: 5 }).map((_, s) => (
-                    <Star key={s} className="w-4 h-4 fill-primary text-primary" />
-                  ))}
-                </div>
-              </Card>
-            ))}
+
+          <div className="relative rounded-2xl overflow-hidden border border-border ring-glow bg-card">
+            <img
+              src={campaignResults}
+              alt="Ghostframe Marketing campaign performance results dashboard"
+              className="w-full h-auto block"
+              loading="lazy"
+            />
+          </div>
+
+          <div className="mt-10 max-w-3xl mx-auto text-center">
+            <h3 className="text-2xl md:text-3xl font-bold tracking-tight">
+              Lower CPL. Higher Engagement. Real Results.
+            </h3>
+            <p className="mt-4 text-muted-foreground leading-relaxed">
+              Ghostframe Marketing focuses on building smarter systems designed to attract leads, improve follow-up, and help businesses grow more efficiently.
+            </p>
           </div>
         </div>
       </section>
