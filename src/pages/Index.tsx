@@ -28,6 +28,10 @@ import {
   ShieldCheck,
   Clock,
   CheckCircle2,
+  Quote,
+  Rocket,
+  Headphones,
+  Cog,
 } from "lucide-react";
 
 const services = [
