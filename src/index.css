@@ -96,3 +96,32 @@ All colors MUST be HSL.
     @apply bg-background text-foreground;
   }
 }
+
+@layer utilities {
+  .bg-grid {
+    background-image:
+      linear-gradient(to right, hsl(var(--border) / 0.35) 1px, transparent 1px),
+      linear-gradient(to bottom, hsl(var(--border) / 0.35) 1px, transparent 1px);
+    background-size: 56px 56px;
+  }
+  .bg-radial-fade {
+    background: radial-gradient(ellipse at top, hsl(var(--primary) / 0.25), transparent 60%);
+  }
+  .text-gradient {
+    background: linear-gradient(135deg, hsl(var(--foreground)) 0%, hsl(var(--primary)) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .glow-primary {
+    box-shadow: 0 0 60px -10px hsl(var(--primary) / 0.55), 0 0 20px -5px hsl(var(--primary) / 0.4);
+  }
+  .ring-glow {
+    box-shadow: 0 0 0 1px hsl(var(--primary) / 0.4), 0 10px 40px -10px hsl(var(--primary) / 0.35);
+  }
+  @keyframes float-slow {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-12px); }
+  }
+  .animate-float { animation: float-slow 6s ease-in-out infinite; }
+}
