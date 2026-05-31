@@ -89,9 +89,10 @@ const Index = () => {
             </span>
           </a>
           <nav className="hidden md:flex items-center gap-8 text-sm text-muted-foreground">
+            <button onClick={() => scrollTo("about")} className="hover:text-foreground transition">About</button>
             <button onClick={() => scrollTo("system")} className="hover:text-foreground transition">System</button>
             <button onClick={() => scrollTo("services")} className="hover:text-foreground transition">Services</button>
-            <button onClick={() => scrollTo("why")} className="hover:text-foreground transition">Why Us</button>
+            <button onClick={() => scrollTo("results")} className="hover:text-foreground transition">Results</button>
             <button onClick={() => scrollTo("faq")} className="hover:text-foreground transition">FAQ</button>
             <button onClick={() => scrollTo("contact")} className="hover:text-foreground transition">Contact</button>
           </nav>
