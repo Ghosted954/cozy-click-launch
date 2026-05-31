@@ -270,6 +270,97 @@ const Index = () => {
         </div>
       </section>
 
+      {/* About */}
+      <section id="about" className="relative py-28 border-t border-border/60">
+        <div className="absolute inset-0 bg-grid opacity-20 [mask-image:radial-gradient(ellipse_at_center,black,transparent_70%)]" />
+        <div className="relative container mx-auto px-6 max-w-5xl">
+          <div className="grid md:grid-cols-5 gap-12 items-start">
+            <div className="md:col-span-2">
+              <div className="text-xs uppercase tracking-[0.2em] text-primary mb-4">About Ghostframe</div>
+              <h2 className="text-4xl md:text-5xl font-bold tracking-tight leading-tight">
+                Built Behind <br /> The <span className="text-gradient">Scenes.</span>
+              </h2>
+            </div>
+            <div className="md:col-span-3 space-y-5 text-lg text-muted-foreground">
+              <p>
+                Ghostframe Marketing was built on the idea that the best systems are often invisible.
+              </p>
+              <p>
+                Behind every growing business is a framework working quietly in the background, capturing leads, automating follow-up, nurturing customers, and creating opportunities around the clock.
+              </p>
+              <p>
+                We help businesses modernize the way they grow using AI-powered marketing, automation, and smart systems designed to save time, increase efficiency, and generate real results.
+              </p>
+              <p>
+                At Ghostframe, we focus on building the infrastructure behind growth so business owners can focus on what they do best.
+              </p>
+              <p className="text-foreground font-semibold pt-2">Invisible Systems. Visible Growth.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Results / Social Proof */}
+      <section id="results" className="relative py-28 border-t border-border/60 bg-card/20">
+        <div className="container mx-auto px-6 max-w-6xl">
+          <div className="text-center max-w-2xl mx-auto mb-16">
+            <div className="text-xs uppercase tracking-[0.2em] text-primary mb-4">Results</div>
+            <h2 className="text-4xl md:text-6xl font-bold tracking-tight mb-5">Real Systems. Real Growth.</h2>
+            <p className="text-muted-foreground text-lg">
+              Ghostframe Marketing helps businesses automate communication, improve follow-up, and create smarter systems designed for growth.
+            </p>
+          </div>
+
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            {[
+              { icon: Rocket, t: "Faster Lead Response", d: "Instant automated follow-up helps businesses respond to leads faster and increase engagement opportunities." },
+              { icon: CalendarCheck, t: "More Booking Opportunities", d: "AI-powered systems help convert more leads into appointments and customers automatically." },
+              { icon: Headphones, t: "24/7 Customer Communication", d: "Voice agents and chatbots work around the clock so businesses never miss opportunities." },
+              { icon: Cog, t: "Smarter Business Systems", d: "From funnels to automations, Ghostframe builds systems designed to simplify growth and improve efficiency." },
+            ].map((r, i) => {
+              const Icon = r.icon;
+              return (
+                <Card key={i} className="p-6 bg-card border-border hover:border-primary/60 hover:-translate-y-1 transition-all duration-300">
+                  <div className="w-11 h-11 rounded-lg bg-primary/10 border border-primary/30 grid place-items-center mb-5">
+                    <Icon className="w-5 h-5 text-primary" />
+                  </div>
+                  <h3 className="font-semibold text-lg mb-2">{r.t}</h3>
+                  <p className="text-sm text-muted-foreground leading-relaxed">{r.d}</p>
+                </Card>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
+      {/* Testimonials */}
+      <section className="relative py-28 border-t border-border/60">
+        <div className="container mx-auto px-6 max-w-6xl">
+          <div className="text-center mb-16">
+            <div className="text-xs uppercase tracking-[0.2em] text-primary mb-4">Client Feedback</div>
+            <h2 className="text-4xl md:text-6xl font-bold tracking-tight">What Businesses Are Saying</h2>
+          </div>
+          <div className="grid md:grid-cols-3 gap-6">
+            {[
+              "Ghostframe helped us improve follow-up and create a much smoother process for handling leads.",
+              "The automation systems saved us time and helped us respond to customers faster.",
+              "Professional, modern, and focused on real business growth.",
+            ].map((quote, i) => (
+              <Card key={i} className="relative p-8 bg-card border-border hover:border-primary/60 transition group">
+                <Quote className="w-8 h-8 text-primary/60 mb-4" />
+                <p className="text-lg leading-relaxed text-foreground/90">"{quote}"</p>
+                <div className="flex gap-1 mt-6">
+                  {Array.from({ length: 5 }).map((_, s) => (
+                    <Star key={s} className="w-4 h-4 fill-primary text-primary" />
+                  ))}
+                </div>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+
       {/* Why */}
       <section id="why" className="relative py-28 border-t border-border/60 bg-card/20">
         <div className="container mx-auto px-6 max-w-6xl">
